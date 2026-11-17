@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TabRoam · 设置</title><link rel="stylesheet" href="options.css"><script src="options.js" defer></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/32.png">
+</head>
+<body><main>
+  <a class="back" href="page.html">← 打开 TabRoam</a>
+  <div class="eyebrow"><img class="brand-icon" src="icons/48.png" width="36" height="36" alt="">TabRoam</div><h1>按你的习惯搜索。</h1><p class="intro">标签页、书签、历史记录在本地检索。TabRoam 不主动向开发者服务器上传查询；执行网络搜索时，所选搜索引擎会接收关键词。</p><p class="help"><a class="back" href="privacy.html">隐私政策 / Privacy policy</a></p>
+  <form id="settings">
+    <label for="engine">默认搜索引擎</label><select id="engine" name="engine"><option value="google">Google</option><option value="bing">Bing</option><option value="duckduckgo">DuckDuckGo</option><option value="baidu">百度</option></select>
+    <label for="historyDays">历史记录范围</label><select id="historyDays" name="historyDays"><option value="30">最近 30 天</option><option value="90">最近 90 天</option><option value="180">最近 180 天</option><option value="365">最近 1 年</option><option value="0">全部时间</option></select>
+    <p class="help">每次检索最多读取最近 20,000 条历史记录。达到上限时，命令栏会提示；书签和已打开标签页没有这一条数限制。</p>
+    <button type="submit" class="primary">保存设置</button><span id="status" role="status" aria-live="polite"></span>
+  </form>
+  <section><h2>键盘操作</h2><dl><div><dt>唤起命令栏</dt><dd id="shortcut">⌘ ⇧ Space / Ctrl Shift Space</dd></div><div><dt>选择结果</dt><dd>↑ ↓</dd></div><div><dt>默认打开 / 切换标签页</dt><dd>Enter</dd></div><div><dt>在当前标签页打开</dt><dd id="current">⌘ Enter / Ctrl Enter</dd></div><div><dt>关闭并恢复焦点</dt><dd>Esc</dd></div></dl><button id="shortcuts" type="button" class="secondary">修改 Chrome 扩展快捷键 ↗</button><p class="help">如果快捷键被系统或其他扩展占用，请在 Chrome 快捷键页重新分配，或点击工具栏中的 TabRoam 图标。</p></section>
+  <section><h2>权限用途</h2><p class="help">tabs：搜索各窗口的标签页；history / bookmarks：读取本地历史和书签；activeTab / scripting：仅在你唤起插件后显示网页浮层；storage：保存设置和会话内最近标签；favicon：读取 Chrome 缓存图标。无需站点常驻权限，不读取网页正文，没有开发者服务器、遥测或广告。执行搜索或访问网址时，目标引擎或站点会正常接收查询及浏览请求。</p><p class="help">chrome:// 页面、Chrome 应用商店等不允许注入的位置，插件会打开备用扩展页；无痕窗口不启用。</p></section>
+  <footer>TabRoam · Tabs, bookmarks, history. One search.</footer>
+</main></body></html>
