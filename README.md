@@ -8,8 +8,6 @@ TabRoam 是一个 Chrome Manifest V3 命令栏插件：统一查找已打开的�
 
 [隐私政策 / Privacy policy](https://lane-xia.github.io/tabroam/) · [政策正文](store/PRIVACY-POLICY.md) · [权限说明](store/PERMISSIONS.md) · [数据处理说明](store/DATA-PRACTICES.md)
 
-此仓库包含插件源码、测试及隐私政策站点。扩展尚未上传或提交 Chrome 应用商店。
-
 ## 安装
 
 1. 下载本仓库代码并解压，或运行 `git clone https://github.com/Lane-Xia/tabroam.git`。
@@ -66,5 +64,3 @@ npm run test:browser
 - `tests/`：核心逻辑、后台契约、启动回归及浏览器测试。
 - `store/`：政策、权限、商店文案及合成演示数据截图。
 - `docs/`：GitHub Pages政策页面，与插件附带政策保持一致。
-
-本扩展受Arc命令栏交互启发，与The Browser Company无隶属关系。
