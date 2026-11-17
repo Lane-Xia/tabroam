@@ -1,6 +1,6 @@
 # TabRoam: English store listing
 
-Target version: 1.0.5. Prepared: 2026-11-17. These are store-listing handoff materials. The privacy policy is public; the extension has not been uploaded to the Chrome Web Store, submitted for review, or released there.
+Target version: 1.0.5. Prepared: 2026-11-17. These are store-listing handoff materials. The privacy policy is public; the extension has been uploaded as a Chrome Web Store draft and has not been submitted for review or released.
 
 ## Title
 
@@ -50,8 +50,6 @@ Availability and known limitations
 Chrome 121 or later is required. Normal webpages use a centered overlay. Chrome internal pages, the Chrome Web Store and other pages that block injection use a separate extension page. Incognito windows are not enabled.
 
 A known issue remains: starting Chinese IME typing immediately after shortcut activation can drop initial characters. Confirm that the command-bar input is visible and focused before typing. This issue is not fully resolved. Pinyin and pinyin-initial matching are not included.
-
-TabRoam is an independent extension and is not affiliated with Arc or The Browser Company.
 ```
 
 ## Screenshot order and captions
@@ -70,5 +68,6 @@ The target image size is 1280×800. Assets use the real extension UI and demonst
 
 - Suggested category: **Functionality & UI**. The official category description includes tab managers, shortcut managers and app launchers. See the [category guidance](https://developer.chrome.com/docs/webstore/best-practices#choose-your-extensions-category-well).
 - Refer to [PERMISSIONS.md](PERMISSIONS.md) and [DATA-PRACTICES.md](DATA-PRACTICES.md) for the single purpose, permission justifications and data disclosures.
-- Publisher: **LaneXia**. Public support and privacy contact: **xialei0792@gmail.com**. Both were confirmed by the user and recorded in the local materials. Source code and the policy share the [Lane-Xia/tabroam repository](https://github.com/Lane-Xia/tabroam); GitHub Pages publishes `docs/index.html` from the `main` branch’s `/docs` folder. The privacy policy is published on GitHub Pages at [https://lane-xia.github.io/tabroam/](https://lane-xia.github.io/tabroam/), with hosting IP-address logging disclosed. The [local policy text](PRIVACY-POLICY.md) and [HTML source](privacy/index.html) are retained. The extension has not been uploaded, submitted for review, or listed in the Chrome Web Store. See [SUBMISSION-GUIDE.md](../README.md).
+- Publisher: **LaneXia**. Public support and privacy contact: **xialei0792@gmail.com**. Both were confirmed by the user and recorded in the local materials. Source code and the policy share the [Lane-Xia/tabroam repository](https://github.com/Lane-Xia/tabroam); GitHub Pages publishes `docs/index.html` from the `main` branch’s `/docs` folder. The privacy policy is published on GitHub Pages at [https://lane-xia.github.io/tabroam/](https://lane-xia.github.io/tabroam/), with hosting IP-address logging disclosed. The [local policy text](PRIVACY-POLICY.md) and [HTML source](privacy/index.html) are retained. The extension has been uploaded as a Chrome Web Store draft; it has not been submitted for review or listed publicly. See [SUBMISSION-GUIDE.md](../README.md).
+- Store homepage: [project repository](https://github.com/Lane-Xia/tabroam). Support URL: [GitHub Issues](https://github.com/Lane-Xia/tabroam/issues).
 - This copy does not claim AI, webpage-body search, full-text indexing, pinyin matching, a fixed response time, or complete native IME validation.
