@@ -1,6 +1,6 @@
 # TabRoam：简体中文商店文案
 
-目标版本：1.0.5。准备日期：2026-11-17。此文件为商店文案交接材料；隐私政策已公开，扩展尚未上传 Chrome Web Store、未提交审核、未上架。
+目标版本：1.0.5。准备日期：2026-11-17。此文件为商店文案交接材料；隐私政策已公开，扩展已上传为 Chrome Web Store 草稿，未提交审核、未上架。
 
 ## 标题
 
@@ -50,8 +50,6 @@ TabRoam 将标签页、书签、历史记录、网址访问和网络搜索放进
 需要 Chrome 121 或更高版本。普通网页使用居中浮层；Chrome 内部页面、Chrome 应用商店等不允许注入的位置使用备用扩展页。无痕窗口不启用。
 
 当前仍存在快捷键唤起后立即开始中文拼音输入可能缺失开头字符的问题。请确认命令栏输入框已出现并获得焦点后再输入；该问题尚未完全解决。当前版本不提供拼音或拼音首字母匹配。
-
-TabRoam 是独立扩展，与 Arc 或 The Browser Company 无隶属关系。
 ```
 
 ## 截图顺序与配套说明
@@ -70,5 +68,6 @@ TabRoam 是独立扩展，与 Arc 或 The Browser Company 无隶属关系。
 
 - 分类建议：**Functionality & UI**。官方将标签管理器、快捷键管理器和启动器归入此类，见 [分类说明](https://developer.chrome.com/docs/webstore/best-practices#choose-your-extensions-category-well)。
 - 单一用途、权限理由及数据披露分别见 [权限说明](PERMISSIONS.md)、[数据实践](DATA-PRACTICES.md)。
-- 发布者 **LaneXia**，公开支持及隐私联系邮箱 **xialei0792@gmail.com**，均已由用户确认并填入本地材料。政策与源码统一维护于 [Lane-Xia/tabroam](https://github.com/Lane-Xia/tabroam)，从 `main` 分支的 `docs/` 目录发布 `docs/index.html`。隐私政策已通过 GitHub Pages 公开，正式 URL 为 [https://lane-xia.github.io/tabroam/](https://lane-xia.github.io/tabroam/)，并已披露托管访问 IP 日志处理；本地[政策正文](PRIVACY-POLICY.md)与[HTML 源文件](privacy/index.html)同步保留。扩展尚未上传、送审或上架，见 [提交指南](../README.md)。
+- 发布者 **LaneXia**，公开支持及隐私联系邮箱 **xialei0792@gmail.com**，均已由用户确认并填入本地材料。政策与源码统一维护于 [Lane-Xia/tabroam](https://github.com/Lane-Xia/tabroam)，从 `main` 分支的 `docs/` 目录发布 `docs/index.html`。隐私政策已通过 GitHub Pages 公开，正式 URL 为 [https://lane-xia.github.io/tabroam/](https://lane-xia.github.io/tabroam/)，并已披露托管访问 IP 日志处理；本地[政策正文](PRIVACY-POLICY.md)与[HTML 源文件](privacy/index.html)同步保留。扩展已上传为商店草稿，未提交审核、未上架，见 [提交指南](../README.md)。
+- 商店首页：[项目仓库](https://github.com/Lane-Xia/tabroam)；支持网址：[GitHub Issues](https://github.com/Lane-Xia/tabroam/issues)。
 - 本文只描述现有功能，不声明 AI、网页正文检索、全文索引、拼音匹配、固定响应速度或全部原生输入法流程通过。
