@@ -162,7 +162,7 @@ try {
     worker = await target.worker();
     const manifest = await worker.evaluate(() => chrome.runtime.getManifest());
     assert.equal(manifest.manifest_version, 3);
-    assert.equal(manifest.version, '1.0.5');
+    assert.equal(manifest.version, '1.0.6');
     assert.equal(manifest.name, 'TabRoam');
     report.extensionId = extensionId;
     return { id: extensionId, name: extension.name, worker: target.url(), manifestVersion: manifest.manifest_version };

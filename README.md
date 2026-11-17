@@ -2,11 +2,13 @@
 
 ![TabRoam icon](extension/icons/128.png)
 
-TabRoam 是一个 Chrome Manifest V3 命令栏插件：统一查找已打开的标签页、本地书签和浏览历史，并按你的选择切换标签、打开网址或执行网络搜索。当前版本 **1.0.5**，Chrome **121+**；运行时无第三方依赖，无构建步骤。
+TabRoam 是一个 Chrome Manifest V3 命令栏插件：统一查找已打开的标签页、本地书签和浏览历史，并按你的选择切换标签、打开网址或执行网络搜索。当前版本 **1.0.6**，Chrome **121+**；运行时无第三方依赖，无构建步骤。
 
 **发布者：LaneXia** · 联系邮箱：[xialei0792@gmail.com](mailto:xialei0792@gmail.com)
 
 [隐私政策 / Privacy policy](https://lane-xia.github.io/tabroam/) · [政策正文](store/PRIVACY-POLICY.md) · [权限说明](store/PERMISSIONS.md) · [数据处理说明](store/DATA-PRACTICES.md)
+
+1.0.6 增加原生 `_locales/en` 与 `_locales/zh_CN` 名称、短描述元数据，默认 locale 为 `zh_CN`，不代表完整英文界面。后台已上传 1.0.6 草稿，英文详情 2826 字符、简体中文 1074 字符已分别保存，并在刷新和切换语言后验证与本地 JSON 一致；默认 `zh_CN`，3 张 global 截图保留。发布者联系邮箱已在后台验证；未提交审核、未上架。
 
 ## 安装
 

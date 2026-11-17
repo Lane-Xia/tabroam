@@ -1,8 +1,8 @@
 # TabRoam 隐私政策 / Privacy Policy
 
-> 本政策适用于 TabRoam 1.0.5，发布者为 LaneXia。政策的公开提供不代表扩展已提交或获 Chrome Web Store 批准；扩展目前尚未提交商店。 / This policy applies to TabRoam 1.0.5, published by LaneXia. Public availability of the policy does not mean the extension has been submitted to or approved by the Chrome Web Store; the extension has not been submitted.
+> 本政策适用于 TabRoam 1.0.6，发布者为 LaneXia。政策的公开提供不代表扩展已提交或获 Chrome Web Store 批准；扩展目前尚未提交商店。 / This policy applies to TabRoam 1.0.6, published by LaneXia. Public availability of the policy does not mean the extension has been submitted to or approved by the Chrome Web Store; the extension has not been submitted.
 
-**适用版本 / Applies to：** TabRoam 1.0.5
+**适用版本 / Applies to：** TabRoam 1.0.6
 
 **生效及更新日期 / Effective and updated：** 2026-11-17
 
@@ -83,7 +83,7 @@ TabRoam 不将这些数据出售或交给广告平台、数据经纪商，不用
 
 ### 8. 政策变更与联系
 
-本政策自 2026-11-17 生效，适用于 TabRoam 1.0.5，由 LaneXia 发布，并通过 GitHub Pages 提供公开访问。政策公开不代表扩展已提交或已获 Chrome Web Store 批准；扩展目前尚未提交商店。以后数据处理方式发生变化时，应更新本政策及相应商店披露。
+本政策自 2026-11-17 生效，适用于 TabRoam 1.0.6，由 LaneXia 发布，并通过 GitHub Pages 提供公开访问。政策公开不代表扩展已提交或已获 Chrome Web Store 批准；扩展目前尚未提交商店。以后数据处理方式发生变化时，应更新本政策及相应商店披露。
 
 隐私问题请联系：[xialei0792@gmail.com](mailto:xialei0792@gmail.com)。发布者：LaneXia。公开政策地址：[https://lane-xia.github.io/tabroam/](https://lane-xia.github.io/tabroam/)。
 
@@ -158,7 +158,7 @@ TabRoam does not sell this data or provide it to advertising platforms or data b
 
 ### 8. Changes and contact
 
-This policy is effective from 2026-11-17, applies to TabRoam 1.0.5, is published by LaneXia, and is made publicly available through GitHub Pages. Publishing the policy does not mean the extension has been submitted to or approved by the Chrome Web Store; the extension has not been submitted. Changes to data practices should be reflected in this policy and the relevant store disclosures.
+This policy is effective from 2026-11-17, applies to TabRoam 1.0.6, is published by LaneXia, and is made publicly available through GitHub Pages. Publishing the policy does not mean the extension has been submitted to or approved by the Chrome Web Store; the extension has not been submitted. Changes to data practices should be reflected in this policy and the relevant store disclosures.
 
 For privacy questions, contact: [xialei0792@gmail.com](mailto:xialei0792@gmail.com). Publisher: LaneXia. Public policy URL: [https://lane-xia.github.io/tabroam/](https://lane-xia.github.io/tabroam/).
 

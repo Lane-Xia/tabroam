@@ -1,6 +1,6 @@
 # TabRoam：简体中文商店文案
 
-目标版本：1.0.5。准备日期：2026-11-17。此文件为商店文案交接材料；隐私政策已公开，扩展已上传为 Chrome Web Store 草稿，未提交审核、未上架。
+版本：1.0.6。记录日期：2026-11-17。已上传为商店草稿；英文与简体中文详细描述已分别保存并读回一致，未提交审核、未上架。
 
 ## 标题
 
@@ -10,11 +10,11 @@ TabRoam
 
 在一个命令栏中搜索标签页、书签和历史记录，切换窗口、打开网址，或使用你选择的搜索引擎。
 
-字符数：43，含标点；不超过 132 字符。此段为短描述候选，不代表当前包已配置简体中文清单元数据。清单字段的长度限制见 [Chrome 官方说明](https://developer.chrome.com/docs/extensions/reference/manifest/description)。
+字符数：43，含标点；不超过 132 字符。本轮 1.0.6 源包已加入 `_locales/zh_CN/messages.json` 与 `_locales/en/messages.json`，名称和短描述使用本地化元数据，默认 locale 为 `zh_CN`。这是元数据本地化，不代表完整英文界面；Dashboard 详细描述已按 `en` 与 `zh_CN` 分别保存并验证。清单字段的长度限制见 [Chrome 官方说明](https://developer.chrome.com/docs/extensions/reference/manifest/description)。
 
 ## 详细描述
 
-以下正文可复制到简体中文详细描述字段：
+以下正文已保存到 Dashboard 的 `zh_CN` 条目，共 1074 字符；英文在 `en` 条目独立保留。刷新并切换语言后，两段详情均与本地 JSON 逐字一致：
 
 ```text
 TabRoam 将标签页、书签、历史记录、网址访问和网络搜索放进同一个命令栏。输入标题、网址或关键词，选择结果后切换到已有页面，或打开新的目标。
@@ -68,6 +68,6 @@ TabRoam 将标签页、书签、历史记录、网址访问和网络搜索放进
 
 - 分类建议：**Functionality & UI**。官方将标签管理器、快捷键管理器和启动器归入此类，见 [分类说明](https://developer.chrome.com/docs/webstore/best-practices#choose-your-extensions-category-well)。
 - 单一用途、权限理由及数据披露分别见 [权限说明](PERMISSIONS.md)、[数据实践](DATA-PRACTICES.md)。
-- 发布者 **LaneXia**，公开支持及隐私联系邮箱 **xialei0792@gmail.com**，均已由用户确认并填入本地材料。政策与源码统一维护于 [Lane-Xia/tabroam](https://github.com/Lane-Xia/tabroam)，从 `main` 分支的 `docs/` 目录发布 `docs/index.html`。隐私政策已通过 GitHub Pages 公开，正式 URL 为 [https://lane-xia.github.io/tabroam/](https://lane-xia.github.io/tabroam/)，并已披露托管访问 IP 日志处理；本地[政策正文](PRIVACY-POLICY.md)与[HTML 源文件](privacy/index.html)同步保留。扩展已上传为商店草稿，未提交审核、未上架，见 [提交指南](../README.md)。
+- 发布者 **LaneXia**，公开支持及隐私联系邮箱 **xialei0792@gmail.com**，均已由用户确认；发布者联系邮箱在当前后台显示已验证（`pending=false`）。政策与源码统一维护于 [Lane-Xia/tabroam](https://github.com/Lane-Xia/tabroam)，从 `main` 分支的 `docs/` 目录发布 `docs/index.html`。隐私政策已通过 GitHub Pages 公开，正式 URL 为 [https://lane-xia.github.io/tabroam/](https://lane-xia.github.io/tabroam/)，并已披露托管访问 IP 日志处理；本地[政策正文](PRIVACY-POLICY.md)与[HTML 源文件](privacy/index.html)同步保留。当前后台软件包为 1.0.6，双语详情已分别保存并读回一致，global 截图保留 3 张；未提交审核、未上架，见 [提交指南](../README.md)。
 - 商店首页：[项目仓库](https://github.com/Lane-Xia/tabroam)；支持网址：[GitHub Issues](https://github.com/Lane-Xia/tabroam/issues)。
 - 本文只描述现有功能，不声明 AI、网页正文检索、全文索引、拼音匹配、固定响应速度或全部原生输入法流程通过。

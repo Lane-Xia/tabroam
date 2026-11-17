@@ -1,6 +1,6 @@
 # TabRoam: English store listing
 
-Target version: 1.0.5. Prepared: 2026-11-17. These are store-listing handoff materials. The privacy policy is public; the extension has been uploaded as a Chrome Web Store draft and has not been submitted for review or released.
+Version: 1.0.6. Recorded: 2026-11-17. The package has been uploaded as a store draft. English and Simplified Chinese detailed descriptions have been saved separately and verified by readback. Nothing has been submitted for review or released.
 
 ## Title
 
@@ -10,11 +10,11 @@ TabRoam
 
 Search tabs, bookmarks and history in one command bar. Switch windows, open URLs, or search the web with your chosen engine.
 
-Character count: 124, including spaces and punctuation; within the 132-character limit. This is proposed copy, not a declaration that locale-specific manifest metadata is already configured. See the [official description-field documentation](https://developer.chrome.com/docs/extensions/reference/manifest/description).
+Character count: 124, including spaces and punctuation; within the 132-character limit. The 1.0.6 source package includes `_locales/en/messages.json` and `_locales/zh_CN/messages.json` for localized name and short-description metadata, with `zh_CN` as the default locale. This metadata localization does not claim a fully English UI. Dashboard detailed descriptions have separately been saved and verified for `en` and `zh_CN`. See the [official description-field documentation](https://developer.chrome.com/docs/extensions/reference/manifest/description).
 
 ## Detailed description
 
-Copy the following text into the English detailed-description field:
+The following 2826-character description is saved in the Dashboard `en` locale. The Chinese description remains separately saved in `zh_CN`. After refreshing and switching locales, both descriptions matched the local JSON exactly:
 
 ```text
 TabRoam brings tabs, bookmarks, browsing history, URL navigation and web search into one command bar. Enter a title, address or keyword, then switch to an existing page or open your next destination.
@@ -68,6 +68,6 @@ The target image size is 1280×800. Assets use the real extension UI and demonst
 
 - Suggested category: **Functionality & UI**. The official category description includes tab managers, shortcut managers and app launchers. See the [category guidance](https://developer.chrome.com/docs/webstore/best-practices#choose-your-extensions-category-well).
 - Refer to [PERMISSIONS.md](PERMISSIONS.md) and [DATA-PRACTICES.md](DATA-PRACTICES.md) for the single purpose, permission justifications and data disclosures.
-- Publisher: **LaneXia**. Public support and privacy contact: **xialei0792@gmail.com**. Both were confirmed by the user and recorded in the local materials. Source code and the policy share the [Lane-Xia/tabroam repository](https://github.com/Lane-Xia/tabroam); GitHub Pages publishes `docs/index.html` from the `main` branch’s `/docs` folder. The privacy policy is published on GitHub Pages at [https://lane-xia.github.io/tabroam/](https://lane-xia.github.io/tabroam/), with hosting IP-address logging disclosed. The [local policy text](PRIVACY-POLICY.md) and [HTML source](privacy/index.html) are retained. The extension has been uploaded as a Chrome Web Store draft; it has not been submitted for review or listed publicly. See [SUBMISSION-GUIDE.md](../README.md).
+- Publisher: **LaneXia**. Public support and privacy contact: **xialei0792@gmail.com**. Both were confirmed by the user; the publisher contact email is verified in the current Dashboard (`pending=false`). Source code and the policy share the [Lane-Xia/tabroam repository](https://github.com/Lane-Xia/tabroam); GitHub Pages publishes `docs/index.html` from the `main` branch’s `/docs` folder. The privacy policy is published on GitHub Pages at [https://lane-xia.github.io/tabroam/](https://lane-xia.github.io/tabroam/), with hosting IP-address logging disclosed. The [local policy text](PRIVACY-POLICY.md) and [HTML source](privacy/index.html) are retained. The current draft package is version 1.0.6, with separate bilingual descriptions saved and verified and all three global screenshots retained. It has not been submitted for review or listed publicly. See [SUBMISSION-GUIDE.md](../README.md).
 - Store homepage: [project repository](https://github.com/Lane-Xia/tabroam). Support URL: [GitHub Issues](https://github.com/Lane-Xia/tabroam/issues).
 - This copy does not claim AI, webpage-body search, full-text indexing, pinyin matching, a fixed response time, or complete native IME validation.

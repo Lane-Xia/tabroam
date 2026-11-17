@@ -20,7 +20,7 @@ TabRoam 提供一个键盘优先的页面查找与导航命令栏：在本地搜
 
 ## Permissions justification
 
-当前 manifest 恰有以下七项权限：`extension/manifest.json:7`。English 块可分别粘贴到对应权限字段；中文为同义说明。权限的可授予能力可能大于当前代码实际使用范围，下列文案描述实际用途。
+当前 manifest 恰有以下七项权限：`extension/manifest.json:7–15`。English 块可分别粘贴到对应权限字段；中文为同义说明。权限的可授予能力可能大于当前代码实际使用范围，下列文案描述实际用途。
 
 ### activeTab
 
@@ -32,7 +32,7 @@ Temporarily access the active page only after the user invokes TabRoam with its 
 仅在用户点击工具栏按钮或按快捷键唤起 TabRoam 后，临时访问当前页面以展示命令栏，避免申请所有网站的常驻访问权限。Chrome 不允许注入的页面使用独立扩展页作为备用入口。
 ```
 
-依据：`extension/manifest.json:7,11–15`；`extension/background.mjs:239–264`。代码没有常驻 `content_scripts` 或 `host_permissions` 声明。该权限用途不能推导成“浏览数据只在用户打开面板时处理”：会话内标签激活时间仍由后台事件更新，见 `extension/background.mjs:269–291`。
+依据：`extension/manifest.json:1–48`；`extension/background.mjs:239–264`。代码没有常驻 `content_scripts` 或 `host_permissions` 声明。该权限用途不能推导成“浏览数据只在用户打开面板时处理”：会话内标签激活时间仍由后台事件更新，见 `extension/background.mjs:269–291`。
 
 ### scripting
 
@@ -56,7 +56,7 @@ Read the titles, URLs and tab metadata needed to search open tabs across the use
 读取普通 Chrome 窗口内标签页的标题、网址及检索所需元数据，支持跨窗口查找、激活所选标签并聚焦窗口，以及按用户选择打开网址或搜索。检索排除无痕标签和 TabRoam 自身页面。
 ```
 
-依据：`extension/background.mjs:56–64,132–173`；`extension/manifest.json:18`。权限理由主要是跨窗口标题/URL 读取，不应只写“创建新标签页”：创建标签页本身不是申请 `tabs` 的充分理由。
+依据：`extension/background.mjs:56–64,132–173`；`extension/manifest.json:1–48`。权限理由主要是跨窗口标题/URL 读取，不应只写“创建新标签页”：创建标签页本身不是申请 `tabs` 的充分理由。
 
 ### history
 
@@ -108,7 +108,7 @@ Retrieve page icons through Chrome's extension-origin _favicon resource and disp
 
 ## Host permissions
 
-当前无 `host_permissions`、`optional_host_permissions` 或 `<all_urls>`，也没有常驻站点匹配声明；不需要为并不存在的全站点权限填写理由。`activeTab` 提供用户唤起时的临时授权。依据：`extension/manifest.json:1–20`；[Chrome activeTab 官方说明](https://developer.chrome.com/docs/extensions/develop/concepts/activeTab)。
+当前无 `host_permissions`、`optional_host_permissions` 或 `<all_urls>`，也没有常驻站点匹配声明；不需要为并不存在的全站点权限填写理由。`activeTab` 提供用户唤起时的临时授权。依据：`extension/manifest.json:1–48`；[Chrome activeTab 官方说明](https://developer.chrome.com/docs/extensions/develop/concepts/activeTab)。
 
 ## Remote code
 
@@ -126,7 +126,7 @@ All executable JavaScript is included in the extension package. The service work
 全部可执行 JavaScript 均随扩展打包。后台仅导入包内核心模块，注入脚本和扩展页面脚本也都是包内文件。仅有的 fetch 用于读取包内样式和 Chrome 扩展来源的 favicon 资源；未使用远程 JavaScript、WebAssembly、eval、动态代码加载器或分析 SDK。用户执行网络搜索时打开普通浏览器页面，不把其内容加载为扩展代码。
 ```
 
-依据：`extension/manifest.json:8,19`；`extension/background.mjs:1,176–210,249–250`；`extension/page.html:9–10`；`extension/options.html:5`。已逐文件读取运行时 JS 并检索外部加载入口，未发现其他网络请求、远程脚本导入、`eval`、`new Function`、WebAssembly 或遥测 SDK。官方定义见 [Remote hosted code](https://developer.chrome.com/docs/extensions/develop/migrate/remote-hosted-code)。
+依据：`extension/manifest.json:1–48`；`extension/background.mjs:1,176–210,249–250`；`extension/page.html:9–10`；`extension/options.html:5`。已逐文件读取运行时 JS 并检索外部加载入口，未发现其他网络请求、远程脚本导入、`eval`、`new Function`、WebAssembly 或遥测 SDK。官方定义见 [Remote hosted code](https://developer.chrome.com/docs/extensions/develop/migrate/remote-hosted-code)。
 
 ## 填写时保留的事实边界
 

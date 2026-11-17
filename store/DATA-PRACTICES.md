@@ -27,8 +27,8 @@ TabRoam **确实处理浏览数据和用户输入**，主要在用户设备内�
 
 ## 数据流及网络边界
 
-1. 用户唤起后，后台只注入包内 `palette.js` 和 `content.js`。没有全站点常驻脚本；`activeTab` 的临时权限与 `scripting` 用于创建浮层。`extension/background.mjs:239–264`；`extension/manifest.json:7–19`。
-2. 面板与后台使用 `chrome.runtime` 消息传递查询和结果；匹配、去重与排序由包内 `core.mjs` 完成。没有外部消息监听器或声明外部网站连接。`extension/palette.js:61–64,218–232,378–384`；`extension/background.mjs:200–237`；`extension/core.mjs:140–182`；`extension/manifest.json:1–20`。
+1. 用户唤起后，后台只注入包内 `palette.js` 和 `content.js`。没有全站点常驻脚本；`activeTab` 的临时权限与 `scripting` 用于创建浮层。`extension/background.mjs:239–264`；`extension/manifest.json:1–48`。
+2. 面板与后台使用 `chrome.runtime` 消息传递查询和结果；匹配、去重与排序由包内 `core.mjs` 完成。没有外部消息监听器或声明外部网站连接。`extension/palette.js:61–64,218–232,378–384`；`extension/background.mjs:200–237`；`extension/core.mjs:140–182`；`extension/manifest.json:1–48`。
 3. 运行时代码仅有两类 `fetch`：包内 `palette.css`，以及 `chrome-extension://…/_favicon/` 本地资源；没有 HTTP 接收端、遥测、广告、账号或分析 SDK 请求。`extension/background.mjs:176–210`。这里描述扩展自己的调用路径，不把 Chrome 自身的网络服务行为等同为扩展上传。
 4. 主动网络搜索分别导航到 Google、Bing、DuckDuckGo 或百度的 HTTPS 网址；查询作为 URL 参数交给所选提供方。打开历史/书签/手输网址同样导航到目标站点。浏览器会按常规规则处理 IP、User-Agent、Cookie、Referer、历史记录和目标站点数据；扩展没有读取/上传 Cookie 的实现，也无法替这些目标方承诺保留期。`extension/background.mjs:3–7,152–173`；`extension/core.mjs:13–26`。
 5. 地址访问允许 HTTP 和 HTTPS；IP、localhost、带端口内网主机可能默认生成 HTTP。**不能宣称所有访问都加密**，也不能把 URL 编码当成加密。所选引擎的内置搜索模板为 HTTPS。`extension/core.mjs:27–50`；`extension/background.mjs:3–7,33–37,160–170`。
@@ -97,7 +97,7 @@ TabRoam's use of information received from Google APIs adheres to the Chrome Web
 
 ## Remote code 与可复核基线
 
-Remote code 应选 **No**：代码随包提供；`background.mjs` 只导入包内 `core.mjs`，脚本注入使用包内文件，两个 `fetch` 都是扩展来源资源。访问搜索结果页不把其代码执行在扩展上下文内。依据：`extension/background.mjs:1,176–210,249–250`；`extension/manifest.json:8,19`；[官方 RHC 定义](https://developer.chrome.com/docs/extensions/develop/migrate/remote-hosted-code)。可粘贴理由见 [PERMISSIONS.md](PERMISSIONS.md)。
+Remote code 应选 **No**：代码随包提供；`background.mjs` 只导入包内 `core.mjs`，脚本注入使用包内文件，两个 `fetch` 都是扩展来源资源。访问搜索结果页不把其代码执行在扩展上下文内。依据：`extension/background.mjs:1,176–210,249–250`；`extension/manifest.json:1–48`；[官方 RHC 定义](https://developer.chrome.com/docs/extensions/develop/migrate/remote-hosted-code)。可粘贴理由见 [PERMISSIONS.md](PERMISSIONS.md)。
 
 本轮读取的关键文件 SHA-256（便于后续包变更时确认审计范围）：
 

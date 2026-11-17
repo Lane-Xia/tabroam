@@ -1,0 +1,8 @@
+{
+  "extensionName": {
+    "message": "TabRoam"
+  },
+  "extensionDescription": {
+    "message": "在一个命令栏中搜索标签页、书签和历史记录，切换窗口、打开网址，或使用你选择的搜索引擎。"
+  }
+}
